@@ -2,7 +2,10 @@
 
 LINK TO HEROKU : http://polar-spire-2800.herokuapp.com/
 
-Significant Problems
+Problems, HW2
+ - None
+
+Problems from initial setup
  - Needed to run 'bundle update' each time the gemfile was changed before heroku would accept the push.
  - Needed to add the gem 'rails_12factor' to gemfile for heroku to be able to deploy the app.
  - Needed to add the ruby version to the app too for heroku.
