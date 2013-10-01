@@ -15,8 +15,6 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'protected_attributes'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
