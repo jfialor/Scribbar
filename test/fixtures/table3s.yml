@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  date: 2013-10-01 04:38:47
+  timesince: 1
+  private: false
+
+two:
+  name: MyString
+  date: 2013-10-01 04:38:47
+  timesince: 1
+  private: false

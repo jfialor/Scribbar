@@ -1,4 +1,13 @@
 FirstApp::Application.routes.draw do
+  
+
+  get "table3/index"
+  get "table3/new"
+  get "table2/index"
+  resources :users
+  resources :notes
+  get "landing_pages/home"
+  root :to => 'landing_pages#home' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

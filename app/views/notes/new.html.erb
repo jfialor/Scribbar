@@ -1,0 +1,20 @@
+<h1>Notes#new</h1>
+<p>Find me in app/views/notes/new.html.erb</p>
+
+<%= form_for(@note) do |f| %> 
+  <div class="field"> 
+      <p>name</p>  
+      <%= f.text_field :name%> 
+     </div> 
+     <div class="field"> 
+      <p>note-body</p>  
+       <%= f.text_field :body%> 
+     </div> 
+     <div class="field"> 
+      <p>author</p>  
+       <%= f.text_field :author%> 
+     </div> 
+      <div class="actions"> 
+        <%= f.submit %> 
+     </div> 
+<% end %> 
