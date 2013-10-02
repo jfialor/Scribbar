@@ -11,12 +11,16 @@ class NotesController < ApplicationController
   end 
  
   def create 
-  @note = Note.new(params[:note]) 
+  @note = Note.new(note_params) 
   if @note.save 
   redirect_to notes_path 
   else 
   render 'new' 
   end 
      end 
+     
+  def note_params
+  params.require(:note).permit(:name, :body,:author)
+  end
   
 end
