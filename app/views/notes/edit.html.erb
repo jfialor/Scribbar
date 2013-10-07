@@ -1,0 +1,22 @@
+<%=form_for(@note) do |f|%>
+<div class="field">
+	<p>Name<p>
+		<%=f.text_field:name%>
+	</div>
+	<div class="field">
+		<p>Body</p>
+		<%=f.text_field:body%>
+	</div>
+	<div class="field">
+		<p>Author</p>
+		<%=f.text_field:author%>
+	</div>
+	<div class="field">
+		<p>Date</p>
+		<%=f.date_field:date%>
+	</div>
+	
+	<div class="actions">
+		<%=f.submit%>
+	</div>
+<%end%>

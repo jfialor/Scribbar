@@ -1,6 +1,9 @@
 FirstApp::Application.routes.draw do
-  
 
+  #get "notecollections/index"
+  #get "note_collection/index"
+  #resources :notebooks
+  resources :notecollections
   get "table3/index"
   get "table3/new"
   get "table2/index"

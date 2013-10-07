@@ -11,9 +11,16 @@
        <%= f.text_field :body%> 
      </div> 
      <div class="field"> 
-      <p>author</p>  
+      <p>Some comments</p>  
        <%= f.text_field :author%> 
      </div> 
+     <p>Date</p>  
+      <%= f.date_field :author%> 
+    </div>
+ </div> 
+ <p>NoteBook</p>  
+  <%=f.collection_select:notecollection_id, Notecollection.all, :id, :title%> 
+</div> 
       <div class="actions"> 
         <%= f.submit %> 
      </div> 

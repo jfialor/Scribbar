@@ -5,13 +5,23 @@
   <tr> 
    <td>Name</td> 
    <td>Note-body</td> 
-   <td>Author</td> 
+   <td>comments</td> 
+   <td>Note Book</td>
+   <td>Date Created</td> 
+   <td>Link</td>
+   <td>Edit</td>
+   <td>Delete</td>
   </tr> 
   <% @notes.each do |note| %> 
   <tr> 
    <td><%= note.name %></td> 
    <td><%= note.body %></td> 
-   <td><%= note.author %></td> 
+   <td><%= note.author %></td>
+   <td><%= note.notecollection %></td>
+   <td><%= note.date %></td> 
+   <td><%= link_to "show note",note_path(note.id)%></td>
+   <td><%= link_to "edit note", edit_note_path(note.id) %> </td>
+   <td><%=link_to "destroy note", note, confirm: "you sure you want to do this?", method: :delete%><td>
   </tr> 
   <% end %> 
 </table> 

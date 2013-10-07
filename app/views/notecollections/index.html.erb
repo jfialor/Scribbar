@@ -1,0 +1,21 @@
+<h1><strong>Index of NoteBooks</strong></h1>
+
+
+<table> 
+  <tr> 
+   <td>Name</td> 
+   <td>User</td> 
+   <td>Link</td>
+   <td>Edit</td>
+   <td>Delete</td>
+  </tr> 
+  <% @notecollections.each do |note_book| %> 
+  <tr> 
+   <td><%= note_book.title %></td> 
+   <td><%= note_book.user.name %></td>
+   <td><%= link_to "show notecollection",notecollection_path(note_book.id)%></td>
+   <td><%= link_to "edit notecollection", edit_notecollection_path(note_book.id) %> </td>
+   <td><%=link_to "destroy notecollection", note_book, confirm: "you sure you want to do this?", method: :delete%><td> 
+  </tr> 
+  <% end %> 
+</table> 
