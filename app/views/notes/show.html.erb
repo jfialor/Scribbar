@@ -1,7 +1,12 @@
+<h1>A note</h1>
 <div>
-	<h2><%=@note.name%></h2>
-	<p><%=@note.body %></p>
-	<p><%=@note.author %></p>
-	<p><%=@note.date %></p>
-	<p><%=@note.notecollection %></p>
+	<strong>Name</strong><h2><%=@note.name%></h2>
+	<strong>Body</strong><p><%=@note.body %></p>
+	<strong>Comments</strong><p><%=@note.author %></p>
+	<strong>Date</strong><p><%=@note.date %></p>
+	<strong>Note Collection</strong><p><%=@note.notecollection.title %></p>
 </div>
+<p>
+    <%= link_to "edit note", edit_note_path(@note.id) %>
+    <%=link_to "destroy note", @note, confirm: "you sure you want to do this?", method: :delete%>
+</p>

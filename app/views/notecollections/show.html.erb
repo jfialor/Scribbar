@@ -1,4 +1,10 @@
+<h1>A Note Collection</h1> 
 <div>
-	<h2><%=@notecollection.title%></h2>
-	User:<p><%=@notecollection.user.name %></p>
+	<h2><strong>Name:</strong><%=@notecollection.title%></h2>
+	<strong>User:</strong><p><%=@notecollection.user.name %></p>
 </div>
+
+<p>
+    <%= link_to "edit notecollection", edit_notecollection_path(@notecollection.id) %>
+    <%=link_to "destroy notecollection", @notecollection, confirm: "you sure you want to do this?", method: :delete%>
+</p>

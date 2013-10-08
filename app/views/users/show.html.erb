@@ -1,5 +1,10 @@
+<h1>User</h1>
 <div>
 	<h2><%=@user.name%></h2>
 	<p><%=@user.email %></p>
 	<p><%=@user.password %></p>
+</div>
+<div>
+<%= link_to "edit user", edit_user_path(@user.id) %>
+<%=link_to "destroy user", @user, confirm: "you sure you want to do this?", method: :delete%>
 </div>

@@ -3,7 +3,7 @@
 
 <%= form_for(@note) do |f| %> 
   <div class="field"> 
-      <p>name</p>  
+      <p>Name</p>  
       <%= f.text_field :name%> 
      </div> 
      <div class="field"> 
@@ -15,10 +15,10 @@
        <%= f.text_field :author%> 
      </div> 
      <p>Date</p>  
-      <%= f.date_field :author%> 
+      <%= f.date_field :date%> 
     </div>
  </div> 
- <p>NoteBook</p>  
+ <p>NoteBook/Collection</p>  
   <%=f.collection_select:notecollection_id, Notecollection.all, :id, :title%> 
 </div> 
       <div class="actions"> 

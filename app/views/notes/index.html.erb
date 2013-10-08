@@ -17,7 +17,7 @@
    <td><%= note.name %></td> 
    <td><%= note.body %></td> 
    <td><%= note.author %></td>
-   <td><%= note.notecollection %></td>
+   <td><%= note.notecollection.title %></td>
    <td><%= note.date %></td> 
    <td><%= link_to "show note",note_path(note.id)%></td>
    <td><%= link_to "edit note", edit_note_path(note.id) %> </td>

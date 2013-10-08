@@ -1,10 +1,12 @@
+<h1>Edit Note Collection</h1>
+
 <%=form_for(@notecollection) do |f|%>
 <div class="field">
 	<p>Name<p>
 		<%=f.text_field:title%>
 	</div>
 	<div class="field">
-		<p>Body</p>
+		<p>User/Author</p>
 		<%=f.collection_select:user_id, User.all, :id, :name%>
 	</div>
 	

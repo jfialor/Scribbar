@@ -1,3 +1,4 @@
+<h1>Edit Note</h1>
 <%=form_for(@note) do |f|%>
 <div class="field">
 	<p>Name<p>
@@ -15,6 +16,10 @@
 		<p>Date</p>
 		<%=f.date_field:date%>
 	</div>
+	
+    <p>NoteBook/Collection</p>  
+     <%=f.collection_select:notecollection_id, Notecollection.all, :id, :title%> 
+   </div>
 	
 	<div class="actions">
 		<%=f.submit%>
