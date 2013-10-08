@@ -2,6 +2,12 @@
 
 LINK TO HEROKU : http://polar-spire-2800.herokuapp.com/
 
+Problems, HW5
+ Works fine.
+
+Problems, HW4
+ The attribute accessible option does not work on rails 4
+
 Problems, HW2
  - None
 
