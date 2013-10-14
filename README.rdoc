@@ -4,6 +4,10 @@ LINK TO HEROKU : http://polar-spire-2800.herokuapp.com/
 
 Problems, HW5
  Works fine.
+ 
+ What I did HW5
+ - Added relationships between the three different models and controllers present. Notes can be created, a note belongs to a
+ certain notebook, a notebook belongs to a certain user.
 
 Problems, HW4
  The attribute accessible option does not work on rails 4
