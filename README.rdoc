@@ -8,12 +8,15 @@ HomeWork 6
 
 
 -All names in the App (names of Authors, NoteCollections, Notes) must be present
+
 -Note body must have a minimum of 20 characters
+
 -All names in the App (names of Authors, NoteCollections, Notes) must be unique 
 
 CSS styling (extra credit)
 
 -Creating an individual note renders a classic real life notebook for the note body's text input
+
 -Made all forms look prettier
 
 Problems
