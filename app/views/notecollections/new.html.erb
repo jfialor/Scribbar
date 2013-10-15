@@ -1,9 +1,9 @@
 <h1>Create a note collection</h1>
 
 <div class="error-msg">
-  <% if @notecollection_list.errors.any? %>
+  <% if @notecollection.errors.any? %>
       <ul>
-      <% @notecollection_list.errors.full_messages.each do |msg| %>
+      <% @notecollection.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
     </ul>
@@ -11,7 +11,7 @@
   <% end %>
 </div>
 
-<%=form_for(@notecollection_list) do |f| %>
+<%=form_for(@notecollection) do |f| %>
 <div class="field">
 	<p>Name</p>
 	<%=f.text_field:title%>

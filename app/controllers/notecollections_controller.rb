@@ -4,7 +4,7 @@ class NotecollectionsController < ApplicationController
   end
 
   def new
-    @notecollection_list = Notecollection.new
+    @notecollection = Notecollection.new
   end
   
   def create
