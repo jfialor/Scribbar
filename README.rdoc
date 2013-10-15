@@ -4,6 +4,7 @@ LINK TO HEROKU : polar-spire-2800.herokuapp.com/
 
 
 HomeWork 6
+----------
 
 
 -All names in the App (names of Authors, NoteCollections, Notes) must be present
@@ -17,7 +18,8 @@ Made all forms look prettier
 
 Problems
 None
----------------------------------------------------------------------------
+
+==================================================================================================================
 
 Problems, HW5
 
