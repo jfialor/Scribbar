@@ -13,8 +13,8 @@ HomeWork 6
 
 CSS styling (extra credit)
 
-Creating an individual note renders a classic real life notebook for the note body's text input
-Made all forms look prettier
+-Creating an individual note renders a classic real life notebook for the note body's text input
+-Made all forms look prettier
 
 Problems
 None
