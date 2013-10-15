@@ -2,6 +2,18 @@
 
 LINK TO HEROKU : http://polar-spire-2800.herokuapp.com/
 
+
+
+-All names in the App (names of Authors, NoteCollections, Notes) must be present
+-Note body must have a minimum of 20 characters
+-All names in the App (names of Authors, NoteCollections, Notes) must be unique 
+
+CSS styling
+
+Creating an individual note renders a classic real life notebook for the note body's text input
+Made all forms look prettier
+
+
 Problems, HW2
  - None
 
