@@ -1,6 +1,6 @@
 README
 
-LINK TO HEROKU : https://www.polar-spire-2800.herokuapp.com/
+LINK TO HEROKU : polar-spire-2800.herokuapp.com/
 
 
 HomeWork 6
