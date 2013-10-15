@@ -7,6 +7,40 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+	
+	
+	<div id="wrap">
+			  <ul class="navbar">
+				 <li id="Name"><a href="/">Note Taking-Home</a></li>
+				 <li><a href="#">Author</a>
+					<ul>
+		  	          <li><%= link_to "New User", new_user_path %></li>
+		  	          <li><%= link_to "Users", users_path %></li>
+					</ul>         
+				 </li>
+				 <li><a href="#">Note Books</a>
+					<ul>
+		  	          <li><%= link_to "New Note Book",  new_notecollection_path%></li>
+		  	          <li><%= link_to "Note Books", notecollections_path %></li>
+					</ul>         
+				 </li>
+				 <li><a href="#">Notes</a>
+					<ul>
+		  	          <li><%= link_to "New Note", new_note_path%></li>
+		  	          <li><%= link_to "Notes", notes_path %></li>
+					</ul>         
+				 </li>
+			  </ul>
+	</div>
+	
+
+	
+	
+	
+	
+	
+
 
 <%= yield %>
 

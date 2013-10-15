@@ -1,0 +1,118 @@
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+#wrap	{
+	width: 100%; /* Spans the width of the page */
+	height: 50px; 
+	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: relative; 
+	background-color: #366b82;
+	}
+	
+.navbar	{
+		height: 50px;
+	        padding: 0;
+		margin: 0;
+		position: absolute; /* Ensures that the menu doesn’t affect other elements */
+		border-right: 1px solid #54879d; 
+		}
+		
+.navbar li 	{
+			height: auto;
+			width: 150px;  /* Each menu item is 150px wide */
+			float: left;  /* This lines up the menu items horizontally */
+			text-align: center;  /* All text is placed in the center of the box */
+			list-style: none;  /* Removes the default styling (bullets) for the list */
+			font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+			padding: 0;
+			margin: 0;
+			background-color: #366b82;
+		                        }
+								
+.navbar a	{							
+			padding: 18px 0; 
+			border-left: 1px solid #54879d;
+			border-right: 1px solid #1f5065;
+			text-decoration: none;  
+			color: white;
+			display: block;
+										}
+.navbar li:hover, a:hover {background-color: #54879d;}
+
+.navbar li ul 	{
+		display: none;  /* Hides the drop-down menu */
+		height: auto;									
+		margin: 0; /* Aligns drop-down box underneath the menu item */
+		padding: 0; /* Aligns drop-down box underneath the menu item */			
+		}				
+
+.navbar li:hover ul 	{
+                        display: block; /* Displays the drop-down box when the menu item is hovered over */
+                        }
+.navbar li ul li {background-color: #54879d;} 
+
+.navbar li ul li a 	{
+		border-left: 1px solid #1f5065; 
+		border-right: 1px solid #1f5065; 
+		border-top: 1px solid #74a3b7; 
+		border-bottom: 1px solid #1f5065; 
+		}
+				
+.navbar li ul li a:hover	{background-color: #366b82;}
+
+input, textarea {   
+    padding: 9px;  
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 200px;  
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    }  
+  
+textarea {   
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+    }  
+  
+input:hover, textarea:hover,  
+input:focus, textarea:focus {   
+    border-color: #C9C9C9;   
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;  
+    }  
+  
+.form label {   
+    margin-left: 10px;   
+    color: #999999;   
+    }  
+  
+.submit input {  
+    width: auto;  
+    padding: 9px 15px;  
+    background: #617798;  
+    border: 0;  
+    font-size: 14px;  
+    color: #FFFFFF;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    }  

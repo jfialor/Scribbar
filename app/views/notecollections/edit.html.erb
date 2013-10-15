@@ -1,5 +1,16 @@
 <h1>Edit Note Collection</h1>
 
+<div class="error-msg">
+  <% if @notecollection.errors.any? %>
+      <ul>
+      <% @notecollection.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+    </div>
+  <% end %>
+</div>
+
 <%=form_for(@notecollection) do |f|%>
 <div class="field">
 	<p>Name<p>

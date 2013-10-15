@@ -1,5 +1,16 @@
 <h1>Create a new note</h1>
 
+<div class="error-msg">
+  <% if @note.errors.any? %>
+      <ul>
+      <% @note.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+    </div>
+  <% end %>
+</div>
+
 
 <%= form_for(@note) do |f| %> 
   <div class="field"> 
@@ -8,7 +19,7 @@
      </div> 
      <div class="field"> 
       <p>note-body</p>  
-       <%= f.text_field :body%> 
+       <%= f.text_area :body,  :cols => "50", :rows => "10"  %> 
      </div> 
      <div class="field"> 
       <p>Some comments</p>  
