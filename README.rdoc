@@ -16,7 +16,7 @@ Added a login and logout button to navigation bar.
 
 Added users name as link to homepage on navigation bar.
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+===========================================================================
 
 HomeWork 6
 ----------
