@@ -1,5 +1,6 @@
 FirstApp::Application.routes.draw do
 
+  devise_for :users
   #get "notecollections/index"
   #get "note_collection/index"
   #resources :notebooks
@@ -7,7 +8,7 @@ FirstApp::Application.routes.draw do
   get "table3/index"
   get "table3/new"
   get "table2/index"
-  resources :users
+  #resources :users
   resources :notes
   get "landing_pages/home"
   root :to => 'landing_pages#home' 

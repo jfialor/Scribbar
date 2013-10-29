@@ -2,6 +2,12 @@ class NotesController < ApplicationController
 
   def index
   @notes=Note.all
+  
+  if user_signed_in?
+@notes = Note.where(user_id: current_user)
+  else
+    @notes = []
+  end
   end
   
   def new 
@@ -9,16 +15,21 @@ class NotesController < ApplicationController
   end 
  
   def create 
-  @note = Note.new(note_params) 
-  if @note.save 
-  redirect_to notes_path 
+
+  @note = Note.new(note_params)
+  if(@note.user_id != current_user.id)
+       redirect_to root_path
   else 
-  render 'new' 
+    if @note.save 
+      redirect_to notes_path 
+    else 
+      render 'new' 
+    end 
+  end
   end 
-     end 
      
   def note_params
-  params.require(:note).permit(:name, :body,:author,:date,:notecollection_id)
+  params.require(:note).permit(:name, :body,:author,:date,:notecollection_id,:user_id)
   end
   
   def show

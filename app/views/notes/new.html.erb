@@ -32,6 +32,10 @@
  <p>NoteBook/Collection</p>  
   <%=f.collection_select:notecollection_id, Notecollection.all, :id, :title%> 
 </div> 
+<div class="field">
+     <%= f.hidden_field :user_id, :value =>current_user.id%>
+</div>
+
       <div class="actions"> 
         <%= f.submit %> 
      </div> 

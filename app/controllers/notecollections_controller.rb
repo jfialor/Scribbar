@@ -1,6 +1,12 @@
 class NotecollectionsController < ApplicationController
   def index
-    @notecollections=Notecollection.all
+
+        if user_signed_in?
+      @notecollections = Notecollection.where(user_id: current_user)
+        else
+          @notecollections = []
+        end
+    
   end
 
   def new
@@ -9,11 +15,18 @@ class NotecollectionsController < ApplicationController
   
   def create
     @notecollection = Notecollection.new(notecollection_params)
-    if @notecollection.save
-      redirect_to notecollections_path
+    
+    
+    if(@notecollection.user_id != current_user.id)
+         redirect_to root_path
     else
-      render 'new'
+      if @notecollection.save
+        redirect_to notecollections_path
+      else
+        render 'new'
+      end
     end
+    
   end
   
   def notecollection_params
