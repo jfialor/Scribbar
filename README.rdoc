@@ -15,7 +15,8 @@ Incorporated features of the Devise gem to use to assign current logged in users
 Added a login and logout button to navigation bar.
 
 Added users name as link to homepage on navigation bar.
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 HomeWork 6
 ----------
