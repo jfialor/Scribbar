@@ -7,10 +7,15 @@ HOMEWORK7
 ---------
 
 Added the gem Devise.
+
 Configured app to use Devise gem for authorization of users.
+
 Incorporated features of the Devise gem to use to assign current logged in users to notes and notecollections/books automatically, and incorporated security to prevent different users from accessing other notes
+
 Added a login and logout button to navigation bar.
+
 Added users name as link to homepage on navigation bar.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 HomeWork 6
 ----------
