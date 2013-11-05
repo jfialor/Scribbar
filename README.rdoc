@@ -1,6 +1,8 @@
 README
 
-LINK TO HEROKU : ====  polar-spire-2800.herokuapp.com/
+LINK TO HEROKU : 
+==== 
+polar-spire-2800.herokuapp.com/
 ========================================================================
 
 HomeWork 8
