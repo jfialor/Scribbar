@@ -9,7 +9,7 @@ polar-spire-2800.herokuapp.com/
 HomeWork 8
 ----------
 
-**Added New Relic Addon to app, including for development, for performance and monitoring.
+**Added New Relic Addon to app, for performance and monitoring.
 
 **Added Loggly Addon to app, for log retention.
 
