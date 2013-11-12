@@ -6,6 +6,19 @@ polar-spire-2800.herokuapp.com/
 
 =====
 
+HomeWork 9
+----------
+
+**Added new scope to show incomplete notes that the user has not completed
+**Added views to show these notes, so that the user could then complete those notes or delete them if he wanted.
+
+Problems
+--
+None
+
+
+=============================
+
 HomeWork 8
 ----------
 
