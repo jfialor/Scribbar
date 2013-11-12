@@ -1,16 +1,38 @@
 README
 
-LINK TO HEROKU : polar-spire-2800.herokuapp.com/
+LINK TO HEROKU : 
+==== 
+polar-spire-2800.herokuapp.com/
 
+=====
 
-HOMEWORK7
+HomeWork 8
+----------
+
+**Added New Relic Addon to app, for performance and monitoring.
+
+**Added Loggly Addon to app, for log retention.
+
+Problems
+--
+None
+
+==============================
+
+HomeWork 7
 ---------
 
 Added the gem Devise.
+
 Configured app to use Devise gem for authorization of users.
+
 Incorporated features of the Devise gem to use to assign current logged in users to notes and notecollections/books automatically, and incorporated security to prevent different users from accessing other notes
+
 Added a login and logout button to navigation bar.
+
 Added users name as link to homepage on navigation bar.
+
+===========================================================================
 
 HomeWork 6
 ----------
