@@ -1,6 +1,6 @@
 <h1><strong>Index of Notes</strong></h1>
 
-
+<h2>All your notes </h2>
 <table> 
   <tr> 
    <td>Name</td> 
@@ -25,3 +25,11 @@
   </tr> 
   <% end %> 
 </table> 
+<h3>Your Incomplete Notes..</h3>
+	<% @incnotes.each do |note| %>
+	<p>
+		<td><%= note.name %></td><br>
+		<td><%= link_to "Continue Editing..", edit_note_path(note.id) %></td>
+		<td><%=link_to "destroy note", note, confirm: "you sure you want to do this?", method: :delete%></td>
+	</p>
+	<% end %>

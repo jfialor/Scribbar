@@ -1,12 +1,14 @@
 class NotesController < ApplicationController
 
   def index
-  @notes=Note.all
+  #@notes=Note.all
   
   if user_signed_in?
 @notes = Note.where(user_id: current_user)
+@incnotes = Note.incomplete.where(user_id: current_user)
   else
     @notes = []
+    @incnotes = []
   end
   end
   
