@@ -1,5 +1,5 @@
 <h1>Create a new note</h1>
-
+<div id="live-preview-form" class="lp-block">
 <div class="error-msg">
   <% if @note.errors.any? %>
       <ul>
@@ -40,3 +40,14 @@
         <%= f.submit %> 
      </div> 
 <% end %> 
+</div>
+<div id="Preview">
+<div>
+<h1><i>Preview</i><h1>
+</div>
+<div id="live-preview-display" class="lp-block">
+	<div id="lp-avatar"></div>
+	<div id="lp-name"></div>
+	<div id="lp-comment"></div>
+</div>
+</div>

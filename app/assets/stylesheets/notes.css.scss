@@ -3,11 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 textarea {
- background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+ /*background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
  width: 600px;
- height: 300px;
+ height: 300px;*/
  font: normal 14px verdana;
  line-height: 25px;
  padding: 2px 10px;
  border: solid 1px #ddd;
+}
+
+.lp-block		{float:left;}
+//.lp-block input, .lp-block textarea { width:90%; }
+#live-preview-display 	{ //background:#eee; padding:10px; margin-left:50px; margin-top:20px; 
+    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+    width: 600px;
+    height: 300px; 
+	border: solid 1px #ddd;
+}
+#lp-name { font-weight:bold;
+height:55px; 
+margin-left: 200px;
+font: bold 26px verdana; 
+}
+//#lp-avatar { float:right; margin:0 0 20px 20px; }
+#lp-comment { 
+	//padding-top:10px; 
+	font-style:italic; 
+	line-height:25px;
+	margin-left:100px;
+}
+#Preview{
+	float:right;
 }
