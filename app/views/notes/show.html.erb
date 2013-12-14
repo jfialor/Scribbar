@@ -1,12 +1,18 @@
-<h1>A note</h1>
-<div>
-	<strong>Name</strong><h2><%=@note.name%></h2>
-	<strong>Body</strong><p><%=@note.body %></p>
-	<strong>Comments</strong><p><%=@note.author %></p>
-	<strong>Date</strong><p><%=@note.date %></p>
-	<strong>Note Collection</strong><p><%=@note.notecollection.title %></p>
+
+<div id="a_note">
+<div id="a_title"><%=@note.name%></div>
+<div id="a_author"></div>
+<div id="a_body"><%=@note.body %></div>
 </div>
-<p>
-    <%= link_to "edit note", edit_note_path(@note.id) %>
-    <%=link_to "destroy note", @note, confirm: "you sure you want to do this?", method: :delete%>
-</p>
+<hr>
+<div id="a_note_options">
+    <h3><%= link_to "edit note", edit_note_path(@note.id) %></h3>
+    <h3 id="delete"><%=link_to "destroy note", @note, confirm: "you sure you want to do this?", method: :delete%></h3>
+	</div>
+<div id="a_info">
+	<div class="a_note_info"><strong>Author's Comment :</strong> <%=@note.author %></div>
+	<div class="a_note_info"><strong>Date :</strong> <%=@note.date %></div>
+	<div class="a_note_info"><strong>Note Collection :</strong> <%=@note.notecollection.title %><div>
+	<div class="clear"></div>
+</div>
+

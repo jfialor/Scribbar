@@ -16,19 +16,19 @@ textarea {
 	width:950px}
 //.lp-block input, .lp-block textarea { width:90%; }
 #live-preview-display 	{ //background:#eee; padding:10px; margin-left:50px; margin-top:20px; 
-    background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
+    background: url(image_path('real_note.png')) repeat-y;
     width: 100%;
     height: 300px; 
 	border: solid 1px #ddd;
 	overflow: scroll;
 }
-#lp-name { font-weight:bold;
+#lp-name, #a_title { font-weight:bold;
 height:55px; 
 margin-left: 200px;
 font: bold 26px verdana; 
 }
 //#lp-avatar { float:right; margin:0 0 20px 20px; }
-#lp-comment { 
+#lp-comment, #a_body { 
 	//padding-top:10px; 
 	font-style:italic; 
 	line-height:25px;
@@ -56,3 +56,30 @@ font: bold 26px verdana;
 .note_option a:hover{
 	color: #FF6600;
 }
+#a_note {
+    background: url(image_path('real_note.png')) repeat-y;
+    width: 900px;
+  	min-height:400px;
+	display: block;
+	border: solid 1px #ddd;
+	overflow: scroll;
+	margin:auto;
+}
+#a_note_options{
+	font-size:17px;
+	float:left;
+}
+#a_note_options a{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	display:inline;
+	margin-left: 20px;
+}
+#a_note_options a:hover{
+	color: #FF6600;
+}
+#a_info{
+	float:left;
+	margin-left:500px;
+	margin-top:40px;
+}
+
