@@ -25,14 +25,14 @@ Documentation is available at : https://docs.newrelic.com/docs
 debugging and informational purposes. Documentation is available at : http://www.loggly.com/docs/docs-index/
 
 Database Structure and resources : This app has three different resources : Notes, Notebooks and Users. Every User has a Notebook set 
-and a Note set. Additionally, every Notebook has a Note set making every Note have to belong to a notebook.
+and a Note set. Additionally, every Notebook has a Note set, thus every Note has to belong to a notebook.
  
 Validations: The app uses several validations in the creation and authentication of users, and the creation of notes. 
 In user creation:
 
 **Two password fields are used for confirmation of the right password. 
 
-**Additionally, the password must contain a minimum of eight characters, this helps with getting better secure passwords from users
+**Additionally, the password must contain a minimum of eight characters, this helps with getting better secure passwords from users.
 
 **Also, the email field is checked to make sure it matches a required email format, and it is also checked to make sure the database
 does not already contain the same email.
