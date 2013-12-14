@@ -2,7 +2,7 @@ README
 
 LINK TO HEROKU : 
 ==== 
-polar-spire-2800.herokuapp.com/
+scribbar.herokuapp.com/
 
 ======
 
@@ -19,6 +19,7 @@ are authorized before they can access their notes and notebooks. Documentation i
 Addons : This app makes use of two different addons. The first is the New Relic Addon for performance and monitoring. New relic
 enables you to know the perfomance of your app by monitoring the end user experience and how users are interacting with the app.
 Documentation is available at : https://docs.newrelic.com/docs
+
 Additionally, the app uses the Loggly addon for heroku log retention. This enables you to retain previous logs as data mainly to help in
 debugging and informational purposes. Documentation is available at : http://www.loggly.com/docs/docs-index/
 
@@ -37,6 +38,11 @@ does not already contain the same email.
 Scope : The app uses a scope to query the database to find incomplete notes, notes which were started by the user (named) but have no
 note-body. These incomplete notes are placed in the notes index view to enable users to prompt users to further edit them instead of 
 creating an unnecessary number of empty notes.
+
+The CSS features make the site more attractive and Jquery is used to make the Note Accordion in Notes index, and also to preview new notes
+
+
+
 
 
 
