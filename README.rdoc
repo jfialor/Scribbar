@@ -2,7 +2,7 @@ README
 
 LINK TO HEROKU : 
 ==== 
-scribbar.herokuapp.com/
+https://scribbar.herokuapp.com/
 
 ======
 
