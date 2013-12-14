@@ -12,46 +12,161 @@
  *= require_self
  *= require_tree .
  */
+html{
+	height:100%;
+}
+.clear{
+	clear:both;
+}
 
+body{
+	background-color: #f2f2f2;
+	color:#585858;
+	width:100%;
+	//margin: auto; 
+	height:100%;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	background-image:url(image_path('back4.png'));
+}
+#vertical{
+	width:200px;
+	height:400px;
+	//background-image: url(image_path('back5.png'));
+	float:left;
+	margin: 5% auto auto auto;
+	padding:0px;
+	border-radius:10px;
+	color:#232223;
+	opacity:1%;
+	background-color:black;
+}
+#vertical ul{
+	display:block;
+}
+#vertical li{
+	background-image: url(image_path('textured.jpg'));
+	display:inline-block;
+	margin:10px;
+}
+
+#vertical li li{
+	display:none;
+}
+#main{
+	margin:auto;
+}
+#main h2{
+	margin:auto;
+	width:220px; 
+	padding:40px;
+}
+#logo{
+	float: left;
+	width:200px;
+	height:100%;
+	background:url(image_path('logo4.png')) no-repeat center 22px;
+	//background-size:180px 45px;
+}
+#main a{
+	margin:0px auto 0px auto;
+	width:220px; 
+	text-decoration:none;
+	display:block;
+	padding:0px;
+	color:inherit;
+}
+#main a:hover{
+	color:#909090;
+}
+input#user_remember_me{
+	width:20px;
+}
+#new_user{
+	border: 2px solid #333333;
+	width:220px; 
+	margin:auto;
+	border-radius: 20px ;
+	padding:30px;
+}
+#new_user div{
+	margin:auto;
+}
 
 #wrap	{
-	width: 100%; /* Spans the width of the page */
-	height: 50px; 
-	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+	//width: 100%; /* Spans the width of the page */
+	min-width:900px;
+	overflow:hidden;
+	height: 75px; 
+	//margin: 0px 0px 0px 0px; /* Ensures there is no space between sides of the screen and the menu */
+	margin:auto;
 	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
 	position: relative; 
-	background-color: #366b82;
-	}
-	
+	//background-color: #366b82;
+	background-color: #ffffff;
+	//background-image: url(image_path('textured.jpg'));
+	border: 1px solid gray; 
+	border-top:none;
+}
+/*
+#Name{
+	float:left;
+	margin-left:50%;
+	text-shadow: #fef1da 1px 1px 0;
+	margin-left:10px;
+}
+#Name a:hover{
+	background:none;
+	color:#888888 ;
+}
+#Name a{
+	//font-family:Verdana;
+	font: 30px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-shadow: 0px 1px 1px #555;
+	line-height:75px;
+}	
+*/
 .navbar	{
-		height: 50px;
-	        padding: 0;
+		height: 100%;
+	    padding: 0;
 		margin: 0;
 		position: absolute; /* Ensures that the menu doesn’t affect other elements */
-		border-right: 1px solid #54879d; 
+		//border-right: 1px solid #54879d;
+		border-right: 1px solid gray; 
+		width:100%;
 		}
 		
 .navbar li 	{
-			height: auto;
-			width: 150px;  /* Each menu item is 150px wide */
+			height: 100%;
+			width: 150px;
+			  /* Each menu item is 150px wide */
 			float: left;  /* This lines up the menu items horizontally */
 			text-align: center;  /* All text is placed in the center of the box */
 			list-style: none;  /* Removes the default styling (bullets) for the list */
 			font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
 			padding: 0;
 			margin: 0;
-			background-color: #366b82;
+			//background-color: #366b82;
+			float:right;
 		                        }
 								
 .navbar a	{							
-			padding: 18px 0; 
-			border-left: 1px solid #54879d;
-			border-right: 1px solid #1f5065;
+			//padding: 18px 0; 
+			//border-left: 1px solid gray;
+			//border-right: 1px solid black;
+			width:100%;
 			text-decoration: none;  
-			color: white;
-			display: block;
-										}
-.navbar li:hover, a:hover {background-color: #54879d;}
+			display: inline-block;
+
+			color:#353435;
+			font:16px/26px Georgia, "Times New Roman", Times, serif; 
+			line-height:75px;
+			text-shadow: #b4c6c6 1px 1px 0;
+		}
+.navbar a:hover {background: url(image_path('bookmark.png')) no-repeat center -20px;
+	color:#ffffff;
+							}
 
 .navbar li ul 	{
 		display: none;  /* Hides the drop-down menu */
@@ -61,18 +176,23 @@
 		}				
 
 .navbar li:hover ul 	{
-                        display: block; /* Displays the drop-down box when the menu item is hovered over */
+                        //display: block; /* Displays the drop-down box when the menu item is hovered over */
                         }
-.navbar li ul li {background-color: #54879d;} 
+.navbar li ul li {background-color: #464646;
+
+//background: #464646 url(images/menu-bg.png) repeat-x;
+//background-image: url(image_path('menu-bg.png')); 
+} 
 
 .navbar li ul li a 	{
-		border-left: 1px solid #1f5065; 
-		border-right: 1px solid #1f5065; 
-		border-top: 1px solid #74a3b7; 
-		border-bottom: 1px solid #1f5065; 
+		border-left: 1px solid gray; 
+		border-right: 1px solid gray; 
+		border-top: 1px solid gray; 
+		border-bottom: 1px solid black;
+		background: #464646 url(image_path('menu-bg.png')) repeat-x; 
 		}
 				
-.navbar li ul li a:hover	{background-color: #366b82;}
+.navbar li ul li a:hover	{background-color: gray;}
 
 input, textarea {   
     padding: 9px;  
@@ -116,3 +236,67 @@ input:focus, textarea:focus {
     -moz-border-radius: 5px;  
     -webkit-border-radius: 5px;  
     }  
+	
+	#accordion-container {
+		font-size: 13px;
+		background: #ffffff;
+		padding: 5px 10px 10px 10px;
+		border: 1px solid #cccccc;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 5px 15px #cccccc;
+		-webkit-box-shadow: 0 5px 15px #cccccc;
+		box-shadow: 0 5px 15px #cccccc;
+	}
+
+	.accordion-header {
+		font-size: 16px;
+		background: #ebebeb;
+		margin: 5px 0 0 0;
+		padding: 5px 20px;
+		border: 1px solid #cccccc;
+		cursor: pointer;
+		color: #666666;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	.active-header {
+		-moz-border-radius: 5px 5px 0 0;
+		-webkit-border-radius: 5px 5px 0 0;
+		border-radius: 5px 5px 0 0;
+		background: url(images/active-header.gif) #cef98d;
+		background-repeat: no-repeat;
+		background-position: right 50%;
+	}
+
+	.active-header:hover {
+		background: url(images/active-header.gif) #c6f089;
+		background-repeat: no-repeat;
+		background-position: right 50%;
+	}
+
+	.inactive-header {
+		background: url(images/inactive-header.gif) #ebebeb;
+		background-repeat: no-repeat;
+		background-position: right 50%;
+	}
+
+	.inactive-header:hover {
+		background: url(images/inactive-header.gif) #f5f5f5;
+		background-repeat: no-repeat;
+		background-position: right 50%;
+	}
+
+	.accordion-content {
+		display: none;
+		padding: 20px;
+		background: #ffffff;
+		border: 1px solid #cccccc;
+		border-top: 0;
+		-moz-border-radius: 0 0 5px 5px;
+		-webkit-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;
+	}

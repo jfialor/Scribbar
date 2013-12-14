@@ -8,11 +8,12 @@
 </head>
 <body>
 	
-	
+
 	
 	<div id="wrap">
 			  <ul class="navbar">
-				 <li id="Name"><a href="/"><% if user_signed_in? %> <%=current_user.name%> <% else %>Note Taking-Home<% end %></a></li>
+			  <div id="logo"></div>
+				 
 	   	      <% if user_signed_in? %>
 	   	      <li>
 	   	        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
@@ -23,23 +24,35 @@
 	   	      </li>
 	   	    <% end %>
 
-				 <li><a href="#">Note Books</a>
-					<ul>
+				 <li><%= link_to "Note Books", notecollections_path %>
+					<!--<ul>
 		  	          <li><%= link_to "New Note Book",  new_notecollection_path%></li>
 		  	          <li><%= link_to "Note Books", notecollections_path %></li>
-					</ul>         
+					</ul>     -->    
 				 </li>
-				 <li><a href="#">Notes</a>
-					<ul>
+				 <li><%= link_to "Notes", notes_path %>
+					<!--<ul>
 		  	          <li><%= link_to "New Note", new_note_path%></li>
 		  	          <li><%= link_to "Notes", notes_path %></li>
-					</ul>         
+					</ul>   -->      
 				 </li>
+				 <li id="Name"><a href="/"><% if user_signed_in? %> <%=current_user.name%> <% else %><% end %></a></li>
 			  </ul>
 	</div>
-	
-	<ul class="nav navbar-nav">
-	     
+	<!--
+
+	-->
+	<!--
+<div id="vertical">
+<div id="vertical_title"></div>
+<ul id="vertical_main">
+<li>Some new note</li>
+<li>Others to follow</li>
+<li>And more</li>
+</ul>
+</div>
+	-->
+	<ul class="nav2 navbar-nav">
 	  </ul>
 
 	
@@ -49,9 +62,10 @@
 	
 	
 	
-
+	<div id="main">
 
 <%= yield %>
+</div>
 
 </body>
 </html>

@@ -12,13 +12,15 @@ textarea {
  border: solid 1px #ddd;
 }
 
-.lp-block		{float:left;}
+.lp-block		{float:left;
+	width:950px}
 //.lp-block input, .lp-block textarea { width:90%; }
 #live-preview-display 	{ //background:#eee; padding:10px; margin-left:50px; margin-top:20px; 
     background: url(http://i.stack.imgur.com/ynxjD.png) repeat-y;
-    width: 600px;
+    width: 100%;
     height: 300px; 
 	border: solid 1px #ddd;
+	overflow: scroll;
 }
 #lp-name { font-weight:bold;
 height:55px; 
@@ -34,4 +36,23 @@ font: bold 26px verdana;
 }
 #Preview{
 	float:right;
+	width:100%;
+}
+.note_name{
+}
+.note_collection{
+}
+.note_option{
+	float:left;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:17px;
+	margin-top:10px;
+}
+.note_info{
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:14px;
+	margin-top:10px;
+}
+.note_option a:hover{
+	color: #FF6600;
 }

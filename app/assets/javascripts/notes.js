@@ -24,6 +24,7 @@ $(document).ready(function() {
 				nameNode.text(name.val());
 			
 		}
+		
 		/*
 		//gravatar
 		if($('#email').val() && /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test($('#email').val())) {
@@ -32,3 +33,4 @@ $(document).ready(function() {
 		}*/
 	});
 });
+

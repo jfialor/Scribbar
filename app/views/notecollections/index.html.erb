@@ -1,21 +1,22 @@
+<%if @notecollections.blank? %>
+
+<h1 style="margin-left:20px;">You have no note books available..</h1>
+<h3 style="float:left;margin-left:20px;"><%= link_to "Create a notebook", new_notecollection_path%></h3>
+<%else%>
 <h1><strong>Index of NoteBooks/Collections</strong></h1>
+<div id="accordion-container"> 
+<% @notecollections.each do |note_book| %>
+     <div class="accordion-header">
+	 <h3 class="note_name"><%= note_book.title %></h3>
+	 </div> 
+     <div class="accordion-content"> 
+	      <div class="note_option show_note"><%= link_to "show note book",notecollection_path(note_book.id)%></div>
+	      <div class="note_option edit_note"><%= link_to "edit note book", edit_notecollection_path(note_book.id) %></div>
+		  <div class="note_option destroy_note"><%=link_to "destroy note book", note_book, confirm: "you sure you want to do this?", method: :delete%></div>
+		  <div style="clear:both"></div>
+     </div>
 
+     <% end %> 
+</div>
+<%end%>
 
-<table> 
-  <tr> 
-   <td>Name</td> 
-   <td>User</td> 
-   <td>Link</td>
-   <td>Edit</td>
-   <td>Delete</td>
-  </tr> 
-  <% @notecollections.each do |note_book| %> 
-  <tr> 
-   <td><%= note_book.title %></td> 
-   <td><%= note_book.user.name %></td>
-   <td><%= link_to "show notecollection",notecollection_path(note_book.id)%></td>
-   <td><%= link_to "edit notecollection", edit_notecollection_path(note_book.id) %> </td>
-   <td><%=link_to "destroy notecollection", note_book, confirm: "you sure you want to do this?", method: :delete%><td> 
-  </tr> 
-  <% end %> 
-</table> 

@@ -1,6 +1,18 @@
 <h1>Create a new note</h1>
 <div id="live-preview-form" class="lp-block">
 <div class="error-msg">
+
+<div id="Preview">
+<div>
+<h1><i>Preview</i><h1>
+</div>
+<div id="live-preview-display" class="lp-block">
+	<div id="lp-avatar"></div>
+	<div id="lp-name"></div>
+	<div id="lp-author">By <%=current_user.name%></div>
+	<div id="lp-comment"></div>
+</div>
+</div>
   <% if @note.errors.any? %>
       <ul>
       <% @note.errors.full_messages.each do |msg| %>
@@ -30,7 +42,7 @@
     </div>
  </div> 
  <p>NoteBook/Collection</p>  
-  <%=f.collection_select:notecollection_id, Notecollection.all, :id, :title%> 
+  <%=f.collection_select:notecollection_id, Notecollection.all.where(user_id: current_user), :id, :title%> 
 </div> 
 <div class="field">
      <%= f.hidden_field :user_id, :value =>current_user.id%>
@@ -40,14 +52,4 @@
         <%= f.submit %> 
      </div> 
 <% end %> 
-</div>
-<div id="Preview">
-<div>
-<h1><i>Preview</i><h1>
-</div>
-<div id="live-preview-display" class="lp-block">
-	<div id="lp-avatar"></div>
-	<div id="lp-name"></div>
-	<div id="lp-comment"></div>
-</div>
 </div>
