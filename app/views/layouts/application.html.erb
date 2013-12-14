@@ -37,7 +37,13 @@
 		  	          <li><%= link_to "Notes", notes_path %></li>
 					</ul>   -->      
 				 </li>
-				 <li id="Name"><a href="/"><% if user_signed_in? %> <%=current_user.name%> <% else %><% end %></a></li>
+				 <li id="Name"><a href="/"><% if user_signed_in? %>
+				  <% if current_user.name.split.any? { |x| x.length > 13 }%> 
+				  Home
+				  <%else%>
+				  <%=current_user.name%>
+				  <% end%>
+				  <% else %><% end %></a></li>
 			  </ul>
 	</div>
 	<!--
