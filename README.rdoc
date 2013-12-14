@@ -14,7 +14,7 @@ notes for their classes arranged according to respective notebooks. Thus, as the
 efficient way of keeping track of their notes for all their classes.
 
 Gems : 
-**This app makes use of the Devise Gem to authorize users. It helps with signing in and signing up and ensuring that users
+This app makes use of the Devise Gem to authorize users. **It helps with signing in and signing up and ensuring that users
 are authorized before they can access their notes and notebooks. Documentation is available at http://devise.plataformatec.com.br/
 
 **Additionally, I used the jquery-rails gem to import all my jquery to keep it dynamic in production, that way I simply have to run a 
