@@ -42,7 +42,8 @@ Scope : The app uses a scope to query the database to find incomplete notes, not
 note-body. These incomplete notes are placed in the notes index view to enable users to prompt users to further edit them instead of 
 creating an unnecessary number of empty notes.
 
-The CSS features make the site more attractive and Jquery is used to make the Note Accordion in Notes index, and also to preview new notes
+The CSS features make the site more attractive and Jquery is used to make the Note Accordion (A standard jquery accordion, documentation
+ available at http://jqueryui.com/accordion/) in Notes index, and also to preview new notes by tracking keystrokes in the note-body area.
 
 
 
