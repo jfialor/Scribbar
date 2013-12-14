@@ -46,7 +46,7 @@ In user creation:
 does not already contain the same email.
 
 Scope : 
-The app uses a scope to query the database to find incomplete notes, notes which were started by the user (named) but have no
+The app uses a scope to query the database to find incomplete notes, notes which were started by the user (named the note) but have no
 note-body. These incomplete notes are placed in the notes index view to enable users to prompt users to further edit them instead of 
 creating an unnecessary number of empty notes.
 
