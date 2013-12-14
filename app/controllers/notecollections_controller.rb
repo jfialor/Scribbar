@@ -48,10 +48,15 @@ class NotecollectionsController < ApplicationController
   
   def show
     @notecollection = Notecollection.find(params[:id])
+    @notes = Note.where(notecollection_id: params[:id])
   end
   
   def destroy
     @notecollection = Notecollection.find(params[:id])
+    @notes = Note.where(notecollection_id: params[:id])
+    @notes.each do |note|
+      note.destroy
+    end
     @notecollection.destroy
     redirect_to notecollections_path
   end

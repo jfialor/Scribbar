@@ -25,7 +25,8 @@ Documentation is available at : https://docs.newrelic.com/docs
 debugging and informational purposes. Documentation is available at : http://www.loggly.com/docs/docs-index/
 
 Database Structure and resources : This app has three different resources : Notes, Notebooks and Users. Every User has a Notebook set 
-and a Note set. Additionally, every Notebook has a Note set, thus every Note has to belong to a notebook.
+and a Note set. Additionally, every Notebook has a Note set, thus every Note has to belong to a notebook. Additional checks make sure that
+deleting a note collection deletes all the notes that belong to it.
  
 Validations: The app uses several validations in the creation and authentication of users, and the creation of notes. 
 In user creation:

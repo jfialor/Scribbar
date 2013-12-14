@@ -31,14 +31,16 @@
 		 	<div class="note_info note_collection">In: <%= note.notecollection.title %></div>
 		 	<div class="note_info note_date">Created on: <%= note.date %></div> 
 		      <div class="note_option show_note"><%= link_to "Continue Editing..", edit_note_path(note.id) %></div>
-		      <div class="note_option edit_note"><%= link_to "edit note", edit_note_path(note.id) %> </div>
 			  <div class="note_option destroy_note"><%=link_to "destroy note", note, confirm: "you sure you want to do this?", method: :delete%></div>
 			  <div style="clear:both"></div>
 	     </div>
 
 	     <% end %> 
 	</div>
+	<h3 style="float:left;margin-left:20px;"><%= link_to "Create a note", new_note_path%></h3>
 	<%end%>
+
+	
 	<!--<table> 
 	  <tr> 
 	   <td>Name</td> 

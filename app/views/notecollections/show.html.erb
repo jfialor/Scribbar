@@ -1,10 +1,26 @@
-<h1>A Note Collection</h1> 
+<h1><%=@notecollection.title%></h1> 
 <div>
-	<h2><strong>Name:</strong><%=@notecollection.title%></h2>
-	<strong>User:</strong><p><%=@notecollection.user.name %></p>
+	<h3 style="margin-left:20px;"><strong>By: </strong><%=@notecollection.user.name %></h3>
 </div>
 
-<p>
-    <%= link_to "edit notecollection", edit_notecollection_path(@notecollection.id) %>
-    <%=link_to "destroy notecollection", @notecollection, confirm: "you sure you want to do this?", method: :delete%>
+<p style="float:left; margin-left:5px;">
+    <%= link_to "edit note book", edit_notecollection_path(@notecollection.id) %>
+    <%=link_to "destroy note book", @notecollection, confirm: "you sure you want to do this?", method: :delete%>
 </p>
+<h2>Notes</h2>
+<div id="accordion-container"> 
+<% @notes.each do |note| %>
+     <div class="accordion-header">
+	 <h3 class="note_name"><%= note.name %></h3>
+	 </div> 
+     <div class="accordion-content"> 
+	 	<div class="note_info note_collection">In: <%= note.notecollection.title %></div>
+	 	<div class="note_info note_date">Created on: <%= note.date %></div> 
+	      <div class="note_option show_note"><%= link_to "show note",note_path(note.id)%></div>
+	      <div class="note_option edit_note"><%= link_to "edit note", edit_note_path(note.id) %> </div>
+		  <div class="note_option destroy_note"><%=link_to "destroy note", note, confirm: "you sure you want to do this?", method: :delete%></div>
+		  <div style="clear:both"></div>
+     </div>
+
+     <% end %> 
+</div>
