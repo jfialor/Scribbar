@@ -6,6 +6,17 @@ polar-spire-2800.herokuapp.com/
 
 =====
 
+HomeWork 10
+----------
+
+** Added a Jquery text preview area that automatically updates with each user keystroke, for when a user is creating a note.
+
+Problems
+--
+None
+
+=============================
+
 HomeWork 9
 ----------
 
