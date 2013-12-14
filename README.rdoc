@@ -43,7 +43,7 @@ note-body. These incomplete notes are placed in the notes index view to enable u
 creating an unnecessary number of empty notes.
 
 The CSS features make the site more attractive and Jquery is used to make the Note Accordion (A standard jquery accordion, documentation
- available at http://jqueryui.com/accordion/) in Notes index, and also to preview new notes by tracking keystrokes in the note-body area.
+ available at jqueryui.com/accordion/) in Notes index, and also to preview new notes by tracking keystrokes in the note-body area.
 
 
 
