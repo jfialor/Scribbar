@@ -9,7 +9,7 @@ https://scribbar.herokuapp.com/
 FINAL PROJECT
 ----------
 
-For my final project I made an convenient but easy-to-use notetaking app called Scribbar. Mostly meant for students, this app enables its users to store their
+For my final project I made a convenient but easy-to-use notetaking app called Scribbar. Mostly meant for students, this app enables its users to store their
 notes for their classes arranged according to respective notebooks. Thus, as they go about their day to day classes, they have an
 efficient way of keeping track of their notes for all their classes.
 
