@@ -9,14 +9,19 @@ https://scribbar.herokuapp.com/
 FINAL PROJECT
 ----------
 
-For my final project I made an convenient but easy-to-use notetaking app called Scribbar. Mostly meant for students, this app enables its users to store their
+For my final project I made a convenient but easy-to-use notetaking app called Scribbar. Mostly meant for students, this app enables its users to store their
 notes for their classes arranged according to respective notebooks. Thus, as they go about their day to day classes, they have an
 efficient way of keeping track of their notes for all their classes.
 
-Gems : This app makes use of the Devise Gem to authorize users. It helps with signing in and signing up and ensuring that users
+Gems : 
+This app makes use of the Devise Gem to authorize users. **It helps with signing in and signing up and ensuring that users
 are authorized before they can access their notes and notebooks. Documentation is available at http://devise.plataformatec.com.br/
 
-Addons : This app makes use of two different addons. 
+**Additionally, I used the jquery-rails gem to import all my jquery to keep it dynamic in production, that way I simply have to run a 
+bundle update to get the most recent rails configured jquery files. Documentation is available at: http://rubydoc.info/gems/jquery-rails/3.0.4/frames
+
+Addons : 
+This app makes use of two different addons. 
 **The first is the New Relic Addon for performance and monitoring. New relic
 enables you to know the perfomance of your app by monitoring the end user experience and how users are interacting with the app.
 Documentation is available at : https://docs.newrelic.com/docs
@@ -24,11 +29,13 @@ Documentation is available at : https://docs.newrelic.com/docs
 **Additionally, the app uses the Loggly addon for heroku log retention. This enables you to retain previous logs as data mainly to help in
 debugging and informational purposes. Documentation is available at : http://www.loggly.com/docs/docs-index/
 
-Database Structure and resources : This app has three different resources : Notes, Notebooks and Users. Every User has a Notebook set 
+Database Structure and resources : 
+This app has three different resources : Notes, Notebooks and Users. Every User has a Notebook set 
 and a Note set. Additionally, every Notebook has a Note set, thus every Note has to belong to a notebook. Additional checks make sure that
 deleting a note collection deletes all the notes that belong to it.
  
-Validations: The app uses several validations in the creation and authentication of users, and the creation of notes. 
+Validations: 
+The app uses several validations in the creation and authentication of users, and the creation of notes. 
 In user creation:
 
 **Two password fields are used for confirmation of the right password. 
@@ -38,11 +45,14 @@ In user creation:
 **Also, the email field is checked to make sure it matches a required email format, and it is also checked to make sure the database
 does not already contain the same email.
 
-Scope : The app uses a scope to query the database to find incomplete notes, notes which were started by the user (named) but have no
+Scope : 
+The app uses a scope to query the database to find incomplete notes, notes which were started by the user (named the note) but have no
 note-body. These incomplete notes are placed in the notes index view to enable users to prompt users to further edit them instead of 
 creating an unnecessary number of empty notes.
 
-The CSS features make the site more attractive and Jquery is used to make the Note Accordion in Notes index, and also to preview new notes
+The CSS features make the site more attractive and Jquery is used to make the Note Accordion (A standard jquery accordion, documentation 
+available at jqueryui.com/accordion/) in Notes index, and also to preview new notes by tracking keystrokes in the note-body area during 
+note creation.
 
 
 
